@@ -1,0 +1,61 @@
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<Integer> s = new ArrayList<>();
+
+        // Push elements
+        s.add(10);
+        s.add(20);
+        s.add(30);
+
+        // Pop and print the top element
+        System.out.println(s.get(s.size() - 1) + " popped from stack");
+        s.remove(s.size() - 1);
+
+        // Peek at the top element
+        System.out.println("Top element is: " + s.get(s.size() - 1));
+
+        // Print all elements in the stack
+        System.out.print("Elements present in stack: ");
+        while (!s.isEmpty()) {
+            System.out.print(s.get(s.size() - 1) + " ");
+            s.remove(s.size() - 1);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#python 
+s = []
+
+# Push elements
+s.append(10)
+s.append(20)
+s.append(30)
+
+# Pop and print the top element
+print(f'{s[-1]} popped from stack')
+s.pop()
+
+# Peek at the top element
+print(f'Top element is: {s[-1]}')
+
+# Print all elements in the stack
+print('Elements present in stack: ', end='')
+while s:
+    print(s.pop(), end=' ')
